@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: broken-calculator
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/hsctf2/broken-calculator-challenge:4e10b42367a39cef8dab337ce29595c559d0777396959be67ec7d2391be36aae

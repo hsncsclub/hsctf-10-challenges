@@ -1,0 +1,16 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: png-wizard-v3
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+    ports:
+      - protocol: TCP
+        targetPort: 80
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/hsctf2/png-wizard-v3-challenge:62b7132988d1331f0cdbc32f9ea6f10ce740a433eadd57acb84e10aebe6db006

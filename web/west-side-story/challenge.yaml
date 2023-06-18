@@ -1,0 +1,16 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: west-side-story
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+    ports:
+      - protocol: TCP
+        targetPort: 80
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/amiable-fin-385804/west-side-story-challenge:f915e4c265b3548739f7ff5ee39667680aee876d4445136e36329ed02191a46e

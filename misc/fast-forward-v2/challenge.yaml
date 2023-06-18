@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: fast-forward-v2
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/amiable-fin-385804/fast-forward-v2-challenge:a073d4b60437b06df98ac1dd581acab1a1ed8757bf444883c1c87983d52c7d3e

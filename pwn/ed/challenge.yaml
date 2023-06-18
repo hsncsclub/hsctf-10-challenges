@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: ed
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: eu.gcr.io/amiable-fin-385804/ed-healthcheck:2b22f0ea9c82b9f1482f91a438941f9ed5255fdf21718600a39a6b2c887dfac7
+  image: us.gcr.io/amiable-fin-385804/ed-challenge:e1ae2722cd8cee9f2f200670c74009a8a2c1bbd3d4c9eaa802de14265a0177f0

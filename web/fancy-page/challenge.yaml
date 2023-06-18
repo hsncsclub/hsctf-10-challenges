@@ -1,0 +1,16 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: fancy-page
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+    ports:
+      - protocol: TCP
+        targetPort: 80
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/hsctf2/fancy-page-challenge:65011c0fd9119fc03cbb65b9d59144213ea6413716898b8a91059cd4b74923c4

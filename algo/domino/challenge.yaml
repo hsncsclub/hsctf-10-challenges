@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: domino
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: us.gcr.io/amiable-fin-385804/domino-healthcheck:2b22f0ea9c82b9f1482f91a438941f9ed5255fdf21718600a39a6b2c887dfac7
+  image: us.gcr.io/amiable-fin-385804/domino-challenge:6f8d30ac1e41119b6281058168fcc31ac5f076703ced432b721612a2bce7871f

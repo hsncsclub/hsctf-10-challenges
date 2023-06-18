@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <script src="login.js"></script>
+  <style>
+    body {
+      background-color: lavender;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 30px;
+    }
+
+    .title-container {
+      background-color: black;
+      padding: 40px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin: 20px;
+    }
+
+    #loginForm {
+      margin: 100px;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!--Instructions:
+  The Joker is on the loose again in Gotham City! Police have found a web application where the Joker had allegedly tampered with.
+  This mysterious web application has login page, but it has been behaving abnormally lately. Some time ago, an admin panel was created, but unfortunately, the password was lost to time.
+  Unless you can find it...
+  Can you prove that the Joker had tampered with the website?
+  -->
+  <div class="hero">
+    <div class="title-container">
+      <h1>Log in </h1>
+      <h3>to get access</h3>
+    </div>
+  </div>
+
+  <h2>Login</h2>
+  <form id="loginForm">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password: </label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <input type="submit" value="Login">
+    </div>
+  </form>
+  <!--Default Login Credentials:-->
+  <!--Username: default-->
+  <!--Password: password123-->
+
+  <div class="footer">
+    <p>© All rights reserved.</p>
+  </div>
+</body>
+</html>

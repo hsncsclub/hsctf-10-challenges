@@ -1,0 +1,13 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: producing-3s
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: us.gcr.io/amiable-fin-385804/producing-3s-challenge:df9218882593d991751cf373a75b05f6a1d87b1c3447b430d73c0ca8b325b3af

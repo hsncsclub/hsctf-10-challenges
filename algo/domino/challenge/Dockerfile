@@ -1,0 +1,4 @@
+FROM pwn.red/jail
+
+COPY domino /srv/app/run
+ENV JAIL_PORT=1337 JAIL_MEM=100M JAIL_TIME=120 JAIL_POW=45000

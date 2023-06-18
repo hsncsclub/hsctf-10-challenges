@@ -1,0 +1,14 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: cat
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  network:
+    public: true
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: us.gcr.io/amiable-fin-385804/cat-healthcheck:8ec8214e47f569edcaf48cab7e676395f6223d8144e7e679b85492b54e61c191
+  image: us.gcr.io/amiable-fin-385804/cat-challenge:1493231d87079d8c003f6a079d247546f4f75e39461e01f3c8e82b348b109ab3

@@ -1,0 +1,1 @@
+flag{are_you_really_a_wizard_if_you_dont_use_magick}
